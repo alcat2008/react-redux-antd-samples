@@ -1,0 +1,21 @@
+.operation {
+  a {
+    margin-left: 6px;
+  }
+}
+
+.search {
+  margin-bottom: 12px;
+}
+
+.search-item-wrapper {
+  display: inline-block;
+  padding-top: 15px;
+  white-space: nowrap;
+  margin: 6px;
+}
+
+.search-input {
+  min-width: 200px;
+  max-width: 300px;
+}
