@@ -9,6 +9,7 @@ const initialState = {
 export const samples = function (state = initialState, action) {
   switch (action.type) {
     case actionTypes.GET_LIST_TABLE:
+    case actionTypes.GET_LIST_ITEM:
       return { ...state, list: action.payload.result, page: action.payload.page }
     default:
       return state

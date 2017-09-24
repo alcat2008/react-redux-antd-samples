@@ -9,7 +9,8 @@ import * as urls from './constants'
 import Layout from './container'
 import Home from './container/home'
 
-import SamplesListTale from './container/samples/listTable'
+import SamplesListTable from './container/samples/listTable'
+import SamplesListItem from './container/samples/listItem'
 
 const routes = [
   {
@@ -27,8 +28,15 @@ const routes = [
   {
     path: urls.SAMPLE_LIST_TALBE,
     exact: true,
-    component: SamplesListTale,
+    component: SamplesListTable,
     breadcrumbName: '表格列表',
+    parentPath: urls.HOME
+  },
+  {
+    path: urls.SAMPLE_LIST_ITEM,
+    exact: true,
+    component: SamplesListItem,
+    breadcrumbName: '单项列表',
     parentPath: urls.HOME
   },
 ]

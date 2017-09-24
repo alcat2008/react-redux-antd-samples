@@ -90,8 +90,11 @@ class MamsMenu extends Component {
           <Link to={urls.HOME}><Icon type='home'/>首页</Link>
         </MenuItem>
         <SubMenu key='shops' title={<p><Icon type='laptop'/><span>示例程序</span></p>}>
-          <Menu.Item key='search_shop' className={this.getMenuItemClass(urls.SAMPLE_LIST_TALBE)}>
+          <Menu.Item key='SAMPLE_LIST_TALBE' className={this.getMenuItemClass(urls.SAMPLE_LIST_TALBE)}>
             <Link to={urls.SAMPLE_LIST_TALBE}>表格列表</Link>
+          </Menu.Item>
+          <Menu.Item key='SAMPLE_LIST_ITEM' className={this.getMenuItemClass(urls.SAMPLE_LIST_ITEM)}>
+            <Link to={urls.SAMPLE_LIST_ITEM}>单项列表</Link>
           </Menu.Item>
         </SubMenu>
       </Menu>
