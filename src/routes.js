@@ -11,6 +11,7 @@ import Home from './container/home'
 
 import SamplesListTable from './container/samples/listTable'
 import SamplesListItem from './container/samples/listItem'
+import DetailForm from './container/samples/detail'
 
 const routes = [
   {
@@ -37,6 +38,13 @@ const routes = [
     exact: true,
     component: SamplesListItem,
     breadcrumbName: '单项列表',
+    parentPath: urls.HOME
+  },
+  {
+    path: urls.SAMPLE_DETAIL_FORM,
+    exact: true,
+    component: DetailForm,
+    breadcrumbName: '表单详情',
     parentPath: urls.HOME
   },
 ]

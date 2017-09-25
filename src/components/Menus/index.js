@@ -96,6 +96,9 @@ class MamsMenu extends Component {
           <Menu.Item key='SAMPLE_LIST_ITEM' className={this.getMenuItemClass(urls.SAMPLE_LIST_ITEM)}>
             <Link to={urls.SAMPLE_LIST_ITEM}>单项列表</Link>
           </Menu.Item>
+          <Menu.Item key='SAMPLE_DETAIL_FORM' className={this.getMenuItemClass(urls.SAMPLE_DETAIL_FORM)}>
+            <Link to={urls.SAMPLE_DETAIL_FORM}>表单详情</Link>
+          </Menu.Item>
         </SubMenu>
       </Menu>
     )
