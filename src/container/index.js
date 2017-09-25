@@ -79,7 +79,7 @@ class MainLayout extends Component {
               return (<YXBreadcrunb location={location} match={match} routes={this.props.routes} />)
             }}/>
             {/* <YXBreadcrunb />*/}
-            <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
+            <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280, minWidth: 280 }}>
               <MainContent {...this.props}/>
             </Content>
           </div>

@@ -1,7 +1,8 @@
 const api = {
   samples: {
     listTable: 'api/samples/list/table',
-    listItem: 'api/samples/list/item'
+    listItem: 'api/samples/list/item',
+    formDetail: 'api/samples/form/detail'
   }
 }
 

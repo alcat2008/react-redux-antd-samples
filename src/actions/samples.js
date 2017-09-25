@@ -30,3 +30,16 @@ export const getListItem = arg => dispatch => {
     dispatch(showSpin({ bool: false, content: '' }))
   })
 }
+
+export const getFormDetail = arg => dispatch => {
+  dispatch(showSpin({ bool: true, content: '正在加载数据....' }))
+  fetchData(api.samples.formDetail, arg).then(res => {
+    if (res.code !== 0) {
+      message.error(res.errmsg)
+    } else {
+      dispatch(createAction(actionTypes.GET_FORM_DETAIL)(res.data))
+    }
+  }).then(() => {
+    dispatch(showSpin({ bool: false, content: '' }))
+  })
+}
