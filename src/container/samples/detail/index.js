@@ -201,18 +201,6 @@ class FormDetail extends React.Component {
   }
 }
 
-const option = {
-  onFieldsChange: (props, fields) => {
-    // 当 Form.Item 子节点的值发生改变时触发，可以把对应的值转存到 Redux store
-  },
-  mapPropsToFields: (props) => {
-    // 把父组件的属性映射到表单项上（可用于把 Redux store 中的值读出）
-  },
-  onValuesChange: (props, values) => {
-    // 任一表单域的值发生改变时的回调
-  }
-}
-
 const mapStateToProps = (state) => {
   return {
     detail: state.samples.detail
@@ -222,4 +210,4 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => ({
   dispatch,
 })
-export default connect(mapStateToProps, mapDispatchToProps)(Form.create(option)(FormDetail))
+export default connect(mapStateToProps, mapDispatchToProps)(Form.create()(FormDetail))
